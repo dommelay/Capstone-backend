@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const artworkSchema = new mongoose.Schema({
+const myArtworkSchema = new mongoose.Schema({
     title: String,
     image_id: String,
     api_link: String,
@@ -15,5 +15,5 @@ const artworkSchema = new mongoose.Schema({
     marker: Number,
 })
 
-const Artworks = mongoose.model('Artworks', artworkSchema)
-module.exports = Artworks
+const MyArtworks = mongoose.model('MyArtworks', myArtworkSchema)
+module.exports = MyArtworks
